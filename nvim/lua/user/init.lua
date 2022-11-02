@@ -1,0 +1,5 @@
+require("user.set")
+require("user.packer")
+require("user.mappings")
+require("user.netrw")
+require("user.airline")

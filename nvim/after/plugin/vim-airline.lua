@@ -1,0 +1,2 @@
+vim.cmd("set noshowmode")
+
