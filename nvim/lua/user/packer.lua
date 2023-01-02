@@ -9,6 +9,6 @@ return require('packer').startup(function()
   use { "catppuccin/nvim", as = "catppuccin" }
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
-  use {'neoclide/coc.nvim', branch = 'release'}
   use 'vimwiki/vimwiki'
+  use 'tpope/vim-surround'
 end)

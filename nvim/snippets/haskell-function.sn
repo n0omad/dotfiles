@@ -1,0 +1,2 @@
+MyFunction :: Input -> Output
+MyFunction x = 
