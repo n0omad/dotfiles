@@ -1,5 +1,5 @@
 -- To set spellchecker use leader dc as in dictionary
-vim.api.nvim_set_keymap("n", '<leader>[]',":set spell!<CR>", { noremap = true })
+vim.api.nvim_set_keymap("n", '<leader>dc',":set spell!<CR>", { noremap = true })
 
 -- Now vim has spell checker especially useful in articles and books written with latex
 -- current spell checking key combinations is as following: 
