@@ -139,13 +139,13 @@ export PATH="/Users/damoon/.local/bin/:$PATH"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias sb="cd '/Users/damoon/Documents/sb/' && tree ."
 
+alias dt="cd '$HOME/Programs/dotfiles'"
+
 alias cp='cp -iv'
 
 alias hist='history'
 
 alias v='nvim'
-
-alias quest='cd ~/.quests/'
 
 alias mdv='mdv -L'
 
@@ -159,9 +159,7 @@ alias clr='clear'
 
 alias src='source ~/.zshrc'
 
-alias viz='v ~/.zshrc'
-
-alias ctop='cointop'
+alias viz='dt && v zsh/.zshrc'
 
 alias fp='ffplay'
 
