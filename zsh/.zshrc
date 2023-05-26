@@ -163,6 +163,18 @@ alias viz='dt && v zsh/.zshrc'
 
 alias fp='ffplay'
 
+alias work="timer 40m && terminal-notifier -message 'Pomodoro'\
+        -title 'Take 5'\
+        -sound Crystal"
+        
+alias rest="timer 5m && terminal-notifier -message 'Pomodoro'\
+        -title 'Get back to work'\
+        -sound Crystal"
+
+
+alias brk="timer 5m && terminal-notifier -message 'Pomodoro'\
+        -title 'The end of 2hr preiod'\
+        -sound Crystal"
 #[ -f "/Users/damoon/.ghcup/env" ] && source "/Users/damoon/.ghcup/env" # ghcup-env
 
 # opam configuration
@@ -170,3 +182,7 @@ alias fp='ffplay'
 
 [ -f "/Users/damoon/.ghcup/env" ] && source "/Users/damoon/.ghcup/env" # ghcup-env
 
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export LDFLAGS=-L/opt/homebrew/opt/postgresql@15/lib
+export CPPFLAGS=-I/opt/homebrew/opt/postgresql@15/include
+export PKG_CONFIG_PATH=/opt/homebrew/opt/postgresql@15/lib/pkgconfig
