@@ -44,6 +44,8 @@ yabai -m config external_bar all:20:10
 # ===== Rules ==================================
 
 # yabai -m rule --add label="Dictionary" app="^Dictionary$" manage=off
+yabai -m rule --add label="Steam" app="^Steam$" manage=off  
+yabai -m rule --add label="vlc" app="^vlc$" manage=off
 
 # ===== Signals ================================
 
