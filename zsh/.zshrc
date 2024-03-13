@@ -145,7 +145,7 @@ alias cp='cp -iv'
 
 alias hist='history'
 
-alias v='nvim'
+alias v='vim'
 
 alias mdv='mdv -L'
 
