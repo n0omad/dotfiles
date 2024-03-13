@@ -13,9 +13,11 @@ vim.opt.smartindent = true
 vim.opt.mouse = nil
 vim.opt.wrap = false
 
+
 vim.g.mapleader = " "
 
 vim.cmd [[inoremap <expr> <TAB> pumvisible() ? "<C-y>" : "<TAB>"]]
 
 vim.cmd("set path+=**")
+vim.cmd("set term bidi")
 

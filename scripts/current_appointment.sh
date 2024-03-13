@@ -3,4 +3,4 @@
 
 hour=$(date +%H)
 
-calcurse -a --format-recur-apt "%m %(start:%H)\n" | grep "^[a-z]" | awk -v h=$hour '$2 <= h'
+calcurse -a --format-recur-apt "%m %(start:%H)\n" | grep "^[a-z]" | awk -v h=$hour '$2 <= h {print $1}' | tail -1
