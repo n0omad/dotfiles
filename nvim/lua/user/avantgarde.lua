@@ -1,1 +1,0 @@
--- configs for create ascii art or ansi art in vim 

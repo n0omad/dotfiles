@@ -12,9 +12,10 @@ set fillchars=eob:\
 " }}}
 
 " APPEARANCE ------------------------------------------------------------ {{{
-packadd! dracula
-colorscheme dracula
-
+packadd! lightline-bufferline
+colorscheme catppuccin_mocha
+" }}}
+" APPEARANCE ------------------------------------------------------------ {{{
 set termguicolors
 
 set nocompatible
@@ -34,7 +35,7 @@ set wildmenu
 
 " BEHAVIOR  ------------------------------------------------------------ {{{
 set path+=**
-
+set wildignore+=**/node_modules/**
 " fix backspace
 set backspace=indent,eol,start
 " }}}
@@ -72,14 +73,28 @@ nmap \= <C-w>=
 " STATUS LINE ------------------------------------------------------------ {{{
 
 " Show the status on the second to last line.
-set laststatus=2
  
 let g:lightline = {
-      \ 'colorscheme': 'dracula',
+      \ 'colorscheme': 'catppuccin_mocha',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'tabline': {
+      \   'left': [ ['buffers'] ],
+      \   'right': [ ['close'] ]
+      \ },
+      \ 'component_expand': {
+      \   'buffers': 'lightline#bufferline#buffers'
+      \ },
+      \ 'component_type': {
+      \   'buffers': 'tabsel'
+      \ }
       \ }
 " no show mode is on so that i dont see -- INSERT --
 " or -- VISUAL --
 set noshowmode
+set laststatus=2
+set showtabline=2
 " }}}
 
 " netrw file manager  ------------------------------------------------------------ {{{
@@ -88,7 +103,7 @@ let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
-noremap <leader>e :Lex<CR>
+noremap <leader>v :Lex<CR>
 autocmd FileType netrw setl bufhidden=wipe
 
 " }}}

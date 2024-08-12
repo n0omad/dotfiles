@@ -1,1 +1,0 @@
--- make things ready for slide show presentation inside vim
