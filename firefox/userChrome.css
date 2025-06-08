@@ -1,8 +1,0 @@
-/* hides the native tabs */
-#TabsToolbar { visibility: collapse !important; }
-
-/* hides the menu/URL bar */
-#main-window:not([customizing]) #navigator-toolbox:not(:focus-within):not(:hover) {
-  margin-top: -45px;
-}
-
